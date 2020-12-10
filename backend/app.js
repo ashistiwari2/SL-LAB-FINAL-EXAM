@@ -8,7 +8,7 @@ const MobileRoute = require("./routes/mobile.routes");
 
 mongoose
   .connect(
-    "mongodb+srv://ashis_tiwari:GCLCeAgGxoEzU81A@cluster0.bmwnp.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://ashis_tiwari:GCLCeAgGxoEzU81A@cluster0.bmwnp.mongodb.net/SL_Exam?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Connected to database successfully"))
