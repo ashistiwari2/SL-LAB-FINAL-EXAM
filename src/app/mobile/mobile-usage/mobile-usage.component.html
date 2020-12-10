@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-form-field>
+      <p>username</p>
+      <br><input type="text" matInput placeholder="username:eg ashis@123.com" [(ngModel)]="username"><br>
+      
+      <p>Total time</p><br>
+      <input type="number" matInput placeholder="total time phone accesed in a day(in hour)" [(ngModel)]="total_time"><br>
+      <p>Date</p>
+      
+      <input type="date" matInput placeholder="Date(e.g:12/12/2020)" [(ngModel)]="date"><br>
+      <p>Mood</p>
+      
+      <input type="text" matInput placeholder="mood(good/bad/average)" [(ngModel)]="mood"><br>
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="onSubmit()">Add to database</button>
+  </mat-card>
+  

@@ -1,0 +1,16 @@
+<mat-card *ngIf="mobileList.length > 0">
+    <mat-list role="list">
+      <mat-list-item *ngFor="let todoItem of mobileList">
+        <div class="list-item">
+          <div>{{ todoItem.username }}</div>
+          <div>{{todoItem.total_time}}</div>
+          <div>{{todoItem.date}}</div>
+          <div>{{todoItem.mood}}</div>
+          <div>
+            <mat-icon class="delete" (click)="onDelete(todoItem._id)">delete</mat-icon>
+          </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  
